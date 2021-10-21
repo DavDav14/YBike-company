@@ -1,0 +1,514 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    height: 120px;
+    width: 100%;
+    background-color: #e1e3e4;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 5px solid green;
+}
+
+.logo{
+    padding-top: 10px;
+    width: 20%;
+    height: 120px;
+    padding-right: 100px;
+  
+}
+
+.menu ul{
+    margin-top: 5px;
+    margin-right: 20px;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+ 
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #033333;
+}
+
+.menu ul li a:hover{
+    display: block;
+    color: green;
+    background: #ddd;
+    box-shadow: inset 0px 0px 5px #000;
+} 
+
+.menu ul li .dropdown{
+    display: none;
+}
+
+.menu ul li:hover .dropdown{
+    display: block;
+    background: #e1e3e4;
+    position: absolute;
+    padding: 10px;
+   
+}
+
+.menu ul li:hover .dropdown li{
+    display: block;
+}
+
+.menu ul li:hover .dropdown li a{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.menu ul li:hover .dropdown li a:hover{
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+
+/* Konten */
+
+.container{
+    background-color: #F1EDEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.header-content{
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.header-content h2{
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 21px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-control input:hover{
+    background-color: aliceblue;
+}
+
+.form-control textarea:hover{
+    background-color: aliceblue;
+}
+
+.form-control select:hover{
+    background-color: aliceblue;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.success textarea{
+    border-color: #2ecc71;
+}
+
+.form-control.success select{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.error textarea{
+    border-color: #e74c3c;
+}
+
+.form-control.error select{
+    border-color: #e74c3c;
+}
+
+.form-control select{
+    display: block;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control textarea{
+    display: block;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #e74c3c;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+.form-control.success small{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+/* .form button{
+    background-color: #2F5D62;
+    border: 2px solid #2F5D62;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 4px;
+   
+} */
+
+.form button{
+    background-color: #2F5D62;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #2f5d80;
+}
+
+
+
+/* Footer */
+.footer{
+    background: #e1e3e4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #033333;
+   
+    border-top: 5px solid green;
+}
+
+.footer p{
+    padding: 15px;
+}
+
+@media(max-width:500px){
+
+ .menu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+    background-color: #e1e3e4;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.logo{
+    width: 10%;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 120px;
+    
+}
+
+.menu ul{
+    font-size: 13px;
+    margin-top: 17px;
+    margin-right: 10px;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+ 
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: #033333;
+}
+
+.menu ul li a:hover{
+    display: block;
+    color: green;
+    background: #ddd;
+    box-shadow: inset 0px 0px 5px #000;
+} 
+
+.menu ul li .dropdown{
+    display: none;
+}
+
+.menu ul li:hover .dropdown{
+    display: block;
+    background: #e1e3e4;
+    position: absolute;
+    padding: 5px;
+   
+}
+
+.menu ul li:hover .dropdown li{
+    display: block;
+}
+
+.menu ul li:hover .dropdown li a{
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 0px;
+}
+
+.menu ul li:hover .dropdown li a:hover{
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+    
+    /* Konten */
+    
+    .container{
+        background-color: #F1EDEE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .content{
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(0,0,0,0.3);
+        overflow: hidden;
+        width: 400px;
+        max-width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .header-content{
+        background-color: #f7f7f7;
+        padding: 20px 40px;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+    }
+    
+    .header-content h2{
+        margin: 0;
+    }
+    
+    .form{
+        padding: 30px 40px;
+    }
+    
+    .form-control{
+        margin-bottom: 10px;
+        padding-bottom: 21px;
+        position: relative;
+    }
+    
+    .form-control label{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    
+    .form-control input{
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        font-family: inherit;
+    }
+    
+    .form-control input:hover{
+        background-color: aliceblue;
+    }
+    
+    .form-control textarea:hover{
+        background-color: aliceblue;
+    }
+    
+    .form-control select:hover{
+        background-color: aliceblue;
+    }
+    
+    .form-control.success input{
+        border-color: #2ecc71;
+    }
+    
+    .form-control.success textarea{
+        border-color: #2ecc71;
+    }
+    
+    .form-control.success select{
+        border-color: #2ecc71;
+    }
+    
+    .form-control.error input{
+        border-color: #e74c3c;
+    }
+    
+    .form-control.error textarea{
+        border-color: #e74c3c;
+    }
+    
+    .form-control.error select{
+        border-color: #e74c3c;
+    }
+    
+    .form-control select{
+        display: block;
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .form-control textarea{
+        display: block;
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .form-control small{
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #e74c3c;
+    }
+    
+    .form-control.error small{
+        visibility: visible;
+        color: #e74c3c;
+    }
+    .form-control.success small{
+        visibility: visible;
+        color: #2ecc71;
+    }
+    
+    /* .form button{
+        background-color: #2F5D62;
+        border: 2px solid #2F5D62;
+        color: #fff;
+        display: block;
+        width: 100%;
+        font-size: 17px;
+        padding: 10px;
+        border-radius: 4px;
+       
+    } */
+    
+    .form button{
+        background-color: #2F5D62;
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .form button:hover{
+        background-color: #2f5d80;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Footer */
+    .footer{
+        background: #e1e3e4;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        color: #033333;
+       
+        border-top: 5px solid green;
+    }
+    
+    .footer p{
+        padding: 15px;
+    }
+
+
+}
+
